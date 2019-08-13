@@ -23,9 +23,9 @@
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
       </div>
       <div 
-        class="uk-position-bottom-center uk-position-small"
-        style="transform:translate(-5em, -5em)">
-        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin dotnavPortrait"/>
+        class="uk-position-bottom uk-position-small"
+        style="width:100%">
+        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin dotnavPortrait dotnavPortraitSize"/>
       </div>
     </div>
   
@@ -68,14 +68,11 @@ export default {
 
 .dotnavPortrait > * > *{
   background-color: transparent;
-  transform: scale(1.8);
   border: 1px solid #fbdc00;
-  margin: 0em 1em
 }
 
 .dotnavPortrait > .uk-active > *{
   background-color: #fbdc00;
-  -webkit-transform: scale(1.8);
 }
 
 .gradientPortrait {
@@ -115,7 +112,22 @@ export default {
     border-radius: 10px;
     padding: 1.5em 2em;
     margin-top: 5em;
-  }  
+  }
+
+  .dotnavPortraitSize > * > *{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    /* margin: 0em 1em */
+  }
+
+  .dotnavPortraitSize > .uk-active > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.2);
+  }
+
+  .dotnavPortrait {
+    transform:translate(0em, -5em);
+  }
 }
 
 @media (min-width: 641px) {
@@ -135,7 +147,22 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+  }
+
+  .dotnavPortraitSize > * > *{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    margin: 0em 1em
+  }
+
+  .dotnavPortraitSize > .uk-active > *{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }  
+
+  .dotnavPortrait {
+    transform:translate(0em, -8em);
+  }
 }
 
 @media (min-width: 960px) {
@@ -156,6 +183,21 @@ export default {
     padding: 1em 2em;
     margin-top: 2em;
   }
+
+  .dotnavPortraitSize > * > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    margin: 0em 1em
+  }
+
+  .dotnavPortraitSize > .uk-active > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+  }
+
+  .dotnavPortrait {
+    transform:translate(0em, -8em);
+  }    
 }
 
 @media (min-width: 1200px) {
@@ -175,6 +217,17 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+  }
+
+  .dotnavPortraitSize > * > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    margin: 0em 1em
+  }
+
+  .dotnavPortraitSize > .uk-active > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
   }  
 }
 
@@ -196,5 +249,16 @@ export default {
     padding: 1em 2em;
     margin-top: 2em;
   }
+
+  .dotnavPortraitSize > * > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    margin: 0em 1em
+  }
+
+  .dotnavPortraitSize > .uk-active > *{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+  }  
 }
 </style>
