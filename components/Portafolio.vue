@@ -6,23 +6,26 @@
     <div
       class="uk-padding-small subtitlePortafolioStyle"
       style="color:white; text-align:center;">{{ description }}</div>
-    <div >
+    <div>
       <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-margin-remove">
-        <!-- <div
-          v-for="(item, key) in projects"
-          :key="key"
-          :style="'background-image:url(' + item.imageUrl + ')'"
-          style="height:300px; width:300px"
-          class="uk-padding-remove">
-          <img src="" alt="">
-        </div> -->
         <div
           v-for="(item, key) in projects"
           :key="key"
           class="uk-padding-remove"
           style="cursor:pointer; border: 1px solid black;">
           <img :src="item.imageUrl">
-        </div>        
+        </div>
+        <!-- <div
+          v-for="(item, key) in projects"
+          :key="key"
+          class="uk-padding-remove"
+          style="cursor:pointer; border: 1px solid black;">
+          <div
+            class="uk-position-relative"
+            style="width:600px;">
+            <img class="uk-position-absolute" :src="item.imageUrl">
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
