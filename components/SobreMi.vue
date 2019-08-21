@@ -26,6 +26,8 @@ export default {
   .contentAboutMeSize{
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0em 0em;
+    font-size: 14px;
   }  
 }
 
@@ -33,6 +35,7 @@ export default {
   .contentAboutMeSize{
     margin-left: 5em;
     margin-right: 5em;
+    font-size: 16px;
   }
 }
 
@@ -40,20 +43,23 @@ export default {
   .contentAboutMeSize{
     margin-left: 12em;
     margin-right: 12em;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
   .contentAboutMeSize{
-    margin-left: 14em;
-    margin-right: 14em;
+    margin-left: 12em;
+    margin-right: 12em;
+    font-size: 17px;
   }
 }
 
 @media (min-width: 1600px) {
   .contentAboutMeSize{
-    margin-left: 25em;
-    margin-right: 25em;
+    margin-left: 20em;
+    margin-right: 20em;
+    font-size: 18px;
   }
 }
 </style>

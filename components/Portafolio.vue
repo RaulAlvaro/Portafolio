@@ -75,6 +75,7 @@ export default {
   .subtitlePortafolioStyle{
     margin-left: 2vw;
     margin-right: 2vw;
+    font-size: 14px;
   }  
 }
 
@@ -82,6 +83,7 @@ export default {
   .subtitlePortafolioStyle{
     margin-left: 10vw;
     margin-right: 10vw;
+    font-size: 16px;
   }
 }
 
@@ -89,6 +91,7 @@ export default {
   .subtitlePortafolioStyle{
     margin-left: 15vw;
     margin-right: 15vw;
+    font-size: 16px;
   }
 }
 
@@ -96,6 +99,7 @@ export default {
   .subtitlePortafolioStyle{
     margin-left: 20vw;
     margin-right: 20vw;
+    font-size: 17px;
   }
 }
 
@@ -103,6 +107,7 @@ export default {
   .subtitlePortafolioStyle{
     margin-left: 25vw;
     margin-right: 25vw;
+    font-size: 17px;
   }
 }
 </style>

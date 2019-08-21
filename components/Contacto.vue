@@ -16,13 +16,13 @@
         </div>
         <div class="uk-margin-medium">
           <select class="uk-select">
-            <option>Servicio</option>
-            <option>Servicio 1</option>
-            <option>Servicio 2</option>
+            <option>Desarrollo Web</option>
+            <option>Desarrollo Web</option>
+            <option>Desarrollo Web</option>            
           </select>
         </div>
         <div class="uk-margin-medium">
-          <textarea class="uk-textarea" rows="3" placeholder="Mensaje"></textarea>
+          <textarea class="uk-textarea" rows="5" placeholder="Mensaje"></textarea>
         </div>
         <div class="uk-width-1-1 uk-text-center">
           <button class="btn-contact-style btn-contact-size">Ver Proyecto</button>
@@ -70,20 +70,130 @@ export default {
     cursor: pointer;
   }
 
+  .uk-input {
+    border-radius: 10px;
+    background-color: rgba(204,170,99,0.2);
+  }
+
+  .uk-select:not([multiple]):not([size]) {
+    border-radius: 10px;
+    background-color: rgba(204,170,99,0.2);
+    color: #fbdc00 !important;
+    font-weight: bold !important;      
+  }
+
+  .uk-textarea{
+    border-radius: 10px;
+    background-color: rgba(204,170,99,0.2);
+  }
+
+  .btn-contact-size{
+    border: none;
+    text-decoration: none;
+  }
+
   @media (max-width: 640px) {
-    
+    .contactFormSize{
+      margin-left: 8vw;
+      margin-right: 8vw;
+    }
+
+    .uk-input {
+      height: 50px;
+    }
+
+    .uk-select:not([multiple]):not([size]) {
+      height: 50px;   
+    }
+
+    .uk-textarea{
+      max-height: 80px;
+    }
+
+    .btn-contact-size{
+      font-size: 15px;
+      border-radius: 10px;
+      padding: 1em 1em;
+      margin-bottom: 2em;
+    }     
   }
 
   @media (min-width: 641px) {
-    
+    .contactFormSize{
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+
+    .uk-input {
+      height: 50px;
+    }
+
+    .uk-select:not([multiple]):not([size]) {
+      height: 50px;   
+    }
+
+    .uk-textarea{
+      max-height: 150px;
+    }
+
+    .btn-contact-size{
+      font-size: 15px;
+      border-radius: 10px;
+      padding: 1em 1em;
+      margin-bottom: 2em;
+    }
   }
 
   @media (min-width: 960px) {
-    
+    .contactFormSize{
+      margin-left: 17vw;
+      margin-right: 17vw;
+    }
+
+    .uk-input {
+      height: 50px;
+    }
+
+    .uk-select:not([multiple]):not([size]) {
+      height: 50px;   
+    }
+
+    .uk-textarea{
+      max-height: 150px;
+    }
+
+    .btn-contact-size{
+      font-size: 15px;
+      border-radius: 10px;
+      padding: 1.5em 2.5em;
+      margin-bottom: 2em;
+    }
   }
 
   @media (min-width: 1200px) {
-    
+    .contactFormSize{
+      margin-left: 30vw;
+      margin-right: 30vw;
+    }
+
+    .uk-input {
+      height: 50px;
+    }
+
+    .uk-select:not([multiple]):not([size]) {
+      height: 50px;   
+    }
+
+    .uk-textarea{
+      max-height: 150px;
+    }
+
+    .btn-contact-size{
+      font-size: 15px;
+      border-radius: 10px;
+      padding: 1.5em 2.5em;
+      margin-bottom: 2em;
+    }    
   }
 
   @media (min-width: 1600px) {
@@ -94,28 +204,18 @@ export default {
 
     .uk-input {
       height: 70px;
-      border-radius: 10px;
-      background-color: rgba(204,170,99,0.2);
     }
 
     .uk-select:not([multiple]):not([size]) {
-      height: 70px;
-      border-radius: 10px;
-      background-color: rgba(204,170,99,0.2);
-      color: #fbdc00 !important;
-      font-weight: bold !important;      
+      height: 70px;   
     }
 
     .uk-textarea{
-      max-height: 70px;
-      border-radius: 10px;
-      background-color: rgba(204,170,99,0.2);
+      /* max-height: 70px; */
     }
 
     .btn-contact-size{
       font-size: 20px;
-      border: none;
-      text-decoration: none;
       border-radius: 10px;
       padding: 1em 2em;
       margin-bottom: 2em;
