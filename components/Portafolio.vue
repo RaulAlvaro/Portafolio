@@ -8,24 +8,27 @@
       style="color:white; text-align:center;">{{ description }}</div>
     <div>
       <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-margin-remove">
-        <div
-          v-for="(item, key) in projects"
-          :key="key"
-          class="uk-padding-remove"
-          style="cursor:pointer; border: 1px solid black;">
-          <img :src="item.imageUrl">
-        </div>
         <!-- <div
           v-for="(item, key) in projects"
           :key="key"
           class="uk-padding-remove"
           style="cursor:pointer; border: 1px solid black;">
-          <div
-            class="uk-position-relative"
-            style="width:600px;">
-            <img class="uk-position-absolute" :src="item.imageUrl">
-          </div>
+          <img :src="item.imageUrl">
         </div> -->
+        <div
+          v-for="(item, key) in projects"
+          :key="key"
+          class="uk-padding-remove"
+          style="cursor:pointer; border: 1px solid black;">
+          <div
+            class="uk-position-relative uk-flex uk-flex-middle uk-flex-center portafolio"
+            style="width:600px; height:400px;">
+            <img class="uk-position-absolute" :src="item.imageUrl">
+            <div 
+              class="uk-position-absolute uk-padding description-portafolio image-portafolio uk-height-1-1"
+              style="color:white;">{{ item.description }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -74,6 +77,22 @@ export default {
 </script>
 
 <style>
+.portafolio:hover > .image-portafolio{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+}
+
+.description-portafolio{
+  opacity: 0;
+}
+
+.portafolio:hover > .description-portafolio{
+  opacity: 1;
+}
+
 @media (max-width: 640px) {
   .subtitlePortafolioStyle{
     margin-left: 2vw;
