@@ -19,8 +19,8 @@
               </div>
           </li>
         </ul>
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        <!-- <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a> -->
       </div>
       <div 
         class="uk-position-bottom uk-position-small"
@@ -42,12 +42,12 @@ export default {
           img:'https://static.videezy.com/system/resources/thumbnails/000/005/654/original/4k-stock-video-of-typing-on-laptop.jpg'
         },
         { 
-          title: 'El arte desafia a la tecnología y la tecnología inspira al arte',
-          img:'http://k43.kn3.net/5CDB0798E.jpg'
+          title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
+          img:'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200_amp/public/media/image/2018/01/284717-como-ser-programador-web-2018.jpg?itok=ntxM3Fxk'
         },
         { 
-          title: 'El arte desafia a la tecnología y la tecnología inspira al arte',
-          img:'http://www.imagenesparafondo.com/wp-content/uploads/2013/08/Fondo-Super-Mario.jpg'
+          title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
+          img:'https://www.maximaonline.com.ar/multimedia/noticias/img_65610_programador.jpg'
         }                
       ],
       button: 'PROYECTOS',
@@ -248,6 +248,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+    animation: pulsesc 1.5s infinite;
   }
 
   .dotnavPortraitSize > * > *{
@@ -259,6 +260,6 @@ export default {
   .dotnavPortraitSize > .uk-active > *{
     transform: scale(1.8);
     -webkit-transform: scale(1.8);
-  }  
+  }
 }
 </style>

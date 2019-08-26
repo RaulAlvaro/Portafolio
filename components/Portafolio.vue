@@ -1,36 +1,35 @@
 <template>
   <div 
-    class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-padding-large"
-    style="background-color:black">
-    <h2 style="font-weight:bold; color:#fbdc00; margin-bottom:0px;">Portafolio</h2>
+    class="uk-flex uk-flex-column uk-flex-middle uk-padding-large"
+    style="background-color:black"
+    uk-height-viewport="offset-top: true">
+    
+    <h2
+      class="uk-width-1-1 uk-text-center" 
+      style="font-weight:bold; color:#fbdc00; margin-bottom:0px;">Portafolio</h2>
+    
     <div
       class="uk-padding-small subtitlePortafolioStyle"
       style="color:white; text-align:center;">{{ description }}</div>
-    <div>
+    
+    <div class="uk-width-1-1 uk-height-1-1">
       <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-margin-remove">
-        <!-- <div
-          v-for="(item, key) in projects"
-          :key="key"
-          class="uk-padding-remove"
-          style="cursor:pointer; border: 1px solid black;">
-          <img :src="item.imageUrl">
-        </div> -->
         <div
           v-for="(item, key) in projects"
           :key="key"
           class="uk-padding-remove"
           style="cursor:pointer; border: 1px solid black;">
-          <div
-            class="uk-position-relative uk-flex uk-flex-middle uk-flex-center portafolio"
-            style="width:600px; height:400px;">
-            <img class="uk-position-absolute" :src="item.imageUrl">
-            <div 
+          <div 
+            class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-width-1-1 portafolio">
+            <img class="uk-position-absolute uk-width-1-1 uk-height-1-1" :src="item.imageUrl">
+            <div
               class="uk-position-absolute uk-padding description-portafolio image-portafolio uk-height-1-1"
-              style="color:white;">{{ item.description }}</div>
+              style="color:white; border:5px solid #fbdc00">{{ item.description }}</div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -76,7 +75,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 .portafolio:hover > .image-portafolio{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
@@ -99,6 +98,11 @@ export default {
     margin-right: 2vw;
     font-size: 14px;
   }  
+
+  .portafolio{
+    width:100vw; 
+    height:25vh
+  }   
 }
 
 @media (min-width: 641px) {
@@ -107,6 +111,11 @@ export default {
     margin-right: 10vw;
     font-size: 16px;
   }
+
+  .portafolio{
+    width:100vw; 
+    height:25vh
+  }   
 }
 
 @media (min-width: 960px) {
@@ -115,6 +124,11 @@ export default {
     margin-right: 15vw;
     font-size: 16px;
   }
+
+  .portafolio{
+    width:100vw; 
+    height:25vh
+  }  
 }
 
 @media (min-width: 1200px) {
@@ -123,6 +137,11 @@ export default {
     margin-right: 20vw;
     font-size: 17px;
   }
+
+  .portafolio{
+    width:100vw; 
+    height:28vh
+  }
 }
 
 @media (min-width: 1600px) {
@@ -130,6 +149,11 @@ export default {
     margin-left: 25vw;
     margin-right: 25vw;
     font-size: 17px;
+  }
+
+  .portafolio{
+    width:100vw; 
+    height:40vh
   }
 }
 </style>

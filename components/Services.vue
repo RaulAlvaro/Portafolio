@@ -60,7 +60,7 @@
                 class="uk-card-title uk-text-center service-title-size"
                 style="font-weight:bold">{{service.title}}</h3>
               <hr>
-              <p class="uk-text-center service-description-size">{{ service.description }}</p>
+              <!-- <p class="uk-text-center service-description-size">{{ service.description }}</p> -->
               <button class="btn-services-style btn-services-size">SOLICITAR</button>
             </div>
           </div>
@@ -80,12 +80,12 @@ export default {
           img:'data-128.png'
         },
         { 
-          title: 'Desarrollo Web',
+          title: 'Creción de Apps',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
           img:'data-128.png'
         },
         { 
-          title: 'Desarrollo Web',
+          title: 'Consultoria',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
           img:'data-128.png'
         }                        
