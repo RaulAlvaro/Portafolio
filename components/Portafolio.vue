@@ -23,7 +23,7 @@
             class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-width-1-1 portafolio">
             <img class="uk-position-absolute uk-width-1-1 uk-height-1-1" :src="item.imageUrl">
             <div
-              class="uk-position-absolute uk-padding description-portafolio image-portafolio uk-height-1-1"
+              class="uk-position-absolute uk-padding description-portafolio image-portafolio uk-height-1-1 text-description-portafolio"
               style="color:white; border:5px solid #fbdc00">{{ item.description }}</div>
           </div>
         </div>
@@ -102,7 +102,11 @@ export default {
   .portafolio{
     width:100vw; 
     height:25vh
-  }   
+  }
+
+  .text-description-portafolio{
+    font-size: 10px;
+  }    
 }
 
 @media (min-width: 641px) {
@@ -115,7 +119,11 @@ export default {
   .portafolio{
     width:100vw; 
     height:25vh
-  }   
+  }
+
+  .text-description-portafolio{
+    font-size: 13px;
+  }    
 }
 
 @media (min-width: 960px) {
@@ -128,7 +136,11 @@ export default {
   .portafolio{
     width:100vw; 
     height:25vh
-  }  
+  }
+
+  .text-description-portafolio{
+    font-size: 13px;
+  }    
 }
 
 @media (min-width: 1200px) {
@@ -142,6 +154,9 @@ export default {
     width:100vw; 
     height:28vh
   }
+  .text-description-portafolio{
+    font-size: 15px;
+  }  
 }
 
 @media (min-width: 1600px) {
@@ -154,6 +169,10 @@ export default {
   .portafolio{
     width:100vw; 
     height:40vh
+  }
+
+  .text-description-portafolio{
+    font-size: 17px;
   }
 }
 </style>
