@@ -75,6 +75,21 @@ export default {
   background-color: #fbdc00;
 }
 
+
+@keyframes pulsec {
+  0% {
+    transform:scale(.9);
+  }
+  70% {
+    transform:scale(1);
+    box-shadow: 0 0 10px 10px rgba(251,220,0, 0.4);
+  }
+  100% {
+    transform:scale(.9);
+    box-shadow: 0 0 0 10px 10px rgba(251,220,0, 0.5);
+  }
+}
+
 .gradientPortrait {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.65+100;Neutral+Density */
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 100%); /* FF3.6-15 */
@@ -112,6 +127,7 @@ export default {
     border-radius: 10px;
     padding: 1.5em 2em;
     margin-top: 5em;
+    animation: pulsec 1.5s infinite;
   }
 
   .dotnavPortraitSize > * > *{
@@ -147,6 +163,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+    animation: pulsec 1.5s infinite;
   }
 
   .dotnavPortraitSize > * > *{
@@ -182,6 +199,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+    animation: pulsec 1.5s infinite;
   }
 
   .dotnavPortraitSize > * > *{
@@ -217,6 +235,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 2em;
+    animation: pulsec 1.5s infinite;
   }
 
   .dotnavPortraitSize > * > *{
@@ -245,16 +264,6 @@ export default {
     margin-right: 5.5em;
   }
 
-  .btn-portrait-size{
-    font-size: 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 1em 2em;
-    margin-top: 2em;
-    animation: pulsesc 1.5s infinite;
-  }
-
   .dotnavPortraitSize > * > *{
     transform: scale(1.8);
     -webkit-transform: scale(1.8);
@@ -264,6 +273,16 @@ export default {
   .dotnavPortraitSize > .uk-active > *{
     transform: scale(1.8);
     -webkit-transform: scale(1.8);
+  }
+
+  .btn-portrait-size{
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin-top: 2em;
+    animation: pulsec 1.5s infinite;
   }
 }
 </style>

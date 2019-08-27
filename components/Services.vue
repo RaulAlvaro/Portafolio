@@ -48,24 +48,26 @@
           v-for="(service, i) in servicios"
           :key="i">
           <div 
-            class="uk-card uk-card-default uk-position-relative"
-            style="border-radius:10px; cursor:pointer">
+            class="uk-card uk-card-default uk-position-relative background-card uk-animation-toggle"
+            style="border-radius:10px; cursor:pointer;">
             <div 
-              class="uk-card-media-top uk-text-center uk-padding uk-animation-toggle"
+              class="uk-card-media-top uk-text-center uk-padding"
               style="padding-bottom:0em;">
-              <img class="uk-animation-stroke uk-preserve svg-color"  width="200" height="200" :src="service.img" alt="" uk-svg="stroke-animation: true">
+              <img 
+                class="uk-animation-stroke uk-preserve svg-color"  width="200" height="200" :src="service.img" alt="" uk-svg="stroke-animation: true">
             </div>          
-            <div class="uk-card-body uk-text-center">
+            <div class="uk-card-body uk-text-center container-text">
               <h3 
                 class="uk-card-title uk-text-center service-title-size"
-                style="font-weight:bold">{{service.title}}</h3>
-              <hr>
-              <!-- <p class="uk-text-center service-description-size">{{ service.description }}</p> -->
-              <!-- <button class="btn-services-style btn-services-size">SOLICITAR</button> -->
+                style="font-weight:bold;">{{service.title}}</h3>
+              <hr class="line-color">
+              <p class="uk-text-center service-description-size service-description-style">{{ service.description }}</p>
+              <!-- <div class="uk-position-relative">
+                <div class="uk-position-absolute btn-services-style btn-services-size"/>
+                <div class="uk-position-absolute">SOLICITAR</div>
+              </div> -->
+              <button class="btn-services-style btn-services-size">SOLICITAR</button>
             </div>
-            <!-- <div 
-              class="uk-position-absolute"
-              style="background-color:red; width:280px; height:600px;"/>             -->
           </div>
         </div>
       </div>
@@ -101,6 +103,28 @@ export default {
 </script>
 
 <style>
+.background-card:hover{
+  background-color: #fbdc00;
+}
+
+.background-card:hover .btn-services-style{
+  background-color: black;
+  color:white;
+}
+
+
+.background-card:hover .btn-services-size{
+  animation: pulsecServiceB 1.5s infinite;
+}
+
+.background-card:hover .container-text .line-color{
+  border: 0.5px solid black;
+}
+
+.background-card:hover .container-text .service-description-style{
+  color:black;
+}
+
 .svg-color{
   fill: #fbdc00;
 }
@@ -112,6 +136,34 @@ export default {
   border: none;
   text-decoration: none;  
 }
+
+@keyframes pulsecServiceY {
+  0% {
+    transform:scale(.9);
+  }
+  70% {
+    transform:scale(1);
+    box-shadow: 0 0 10px 10px rgba(251,220,0, 0.4);
+  }
+  100% {
+    transform:scale(.9);
+    box-shadow: 0 0 0 10px 10px rgba(251,220,0, 0.5);
+  }
+}  
+
+@keyframes pulsecServiceB {
+  0% {
+    transform:scale(.9);
+  }
+  70% {
+    transform:scale(1);
+    box-shadow: 0 0 10px 10px rgba(0,0,0, 0.4);
+  }
+  100% {
+    transform:scale(.9);
+    box-shadow: 0 0 0 10px 10px rgba(0,0,0, 0.5);
+  }
+}  
 
 @media (max-width: 640px) {
   .btn-services-size{
@@ -183,10 +235,11 @@ export default {
 
 @media (min-width: 1600px) {
   .btn-services-size{
-    font-size: 17px;
+    font-size: 18px;
     border-radius: 10px;
     padding: 1em 3em;
     margin-top: 1em;
+    animation: pulsecServiceY 1.5s infinite;
   }
 
   .service-title-size{

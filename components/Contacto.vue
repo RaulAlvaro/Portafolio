@@ -92,6 +92,20 @@ export default {
     text-decoration: none;
   }
 
+  @keyframes pulsecContacto {
+    0% {
+      transform:scale(.9);
+    }
+    70% {
+      transform:scale(1);
+      box-shadow: 0 0 10px 10px rgba(251,220,0, 0.4);
+    }
+    100% {
+      transform:scale(.9);
+      box-shadow: 0 0 0 10px 10px rgba(251,220,0, 0.5);
+    }
+  }  
+
   @media (max-width: 640px) {
     .contactFormSize{
       margin-left: 8vw;
@@ -115,6 +129,7 @@ export default {
       border-radius: 10px;
       padding: 1em 1em;
       margin-bottom: 2em;
+      animation: pulsecContacto 1.5s infinite;
     }     
   }
 
@@ -141,6 +156,7 @@ export default {
       border-radius: 10px;
       padding: 1em 1em;
       margin-bottom: 2em;
+      animation: pulsecContacto 1.5s infinite;
     }
   }
 
@@ -167,6 +183,7 @@ export default {
       border-radius: 10px;
       padding: 1.5em 2.5em;
       margin-bottom: 2em;
+      animation: pulsecContacto 1.5s infinite;
     }
   }
 
@@ -193,6 +210,7 @@ export default {
       border-radius: 10px;
       padding: 1.5em 2.5em;
       margin-bottom: 2em;
+      animation: pulsecContacto 1.5s infinite;
     }    
   }
 
@@ -211,7 +229,7 @@ export default {
     }
 
     .uk-textarea{
-      /* max-height: 70px; */
+      max-height: 200px;
     }
 
     .btn-contact-size{
@@ -219,6 +237,7 @@ export default {
       border-radius: 10px;
       padding: 1em 2em;
       margin-bottom: 2em;
+      animation: pulsecContacto 1.5s infinite;
     }    
   }
 
