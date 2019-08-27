@@ -152,7 +152,7 @@ export default {
   .dotnavPortraitSize > * > *{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    margin: 0em 1em
+    margin: 0em 1.2em
   }
 
   .dotnavPortraitSize > .uk-active > *{
@@ -161,7 +161,7 @@ export default {
   }  
 
   .dotnavPortrait {
-    transform:translate(0em, -8em);
+   transform:translate(0em, -8em);
   }
 }
 
@@ -196,7 +196,7 @@ export default {
   }
 
   .dotnavPortrait {
-    transform:translate(0em, -8em);
+    transform:translate(0em, -5em);
   }    
 }
 
@@ -228,7 +228,11 @@ export default {
   .dotnavPortraitSize > .uk-active > *{
     transform: scale(1.8);
     -webkit-transform: scale(1.8);
-  }  
+  }
+
+  .dotnavPortrait {
+    transform:translate(0em, -2em);
+  }
 }
 
 @media (min-width: 1600px) {

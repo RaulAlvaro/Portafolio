@@ -3,8 +3,9 @@
       <Portrait/>
       <Services/>
       <Portafolio/>
-      <SobreMi/>
+      <SobreMi/>        
       <Contacto/>
+   
   </div>
 </template>
 

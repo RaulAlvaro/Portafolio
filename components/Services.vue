@@ -48,21 +48,24 @@
           v-for="(service, i) in servicios"
           :key="i">
           <div 
-            class="uk-card uk-card-default"
-            style="border-radius:10px;">
+            class="uk-card uk-card-default uk-position-relative"
+            style="border-radius:10px; cursor:pointer">
             <div 
-              class="uk-card-media-top uk-text-center uk-padding"
+              class="uk-card-media-top uk-text-center uk-padding uk-animation-toggle"
               style="padding-bottom:0em;">
-              <img :src="service.img" alt="">
-            </div>
+              <img class="uk-animation-stroke uk-preserve svg-color"  width="200" height="200" :src="service.img" alt="" uk-svg="stroke-animation: true">
+            </div>          
             <div class="uk-card-body uk-text-center">
               <h3 
                 class="uk-card-title uk-text-center service-title-size"
                 style="font-weight:bold">{{service.title}}</h3>
               <hr>
               <!-- <p class="uk-text-center service-description-size">{{ service.description }}</p> -->
-              <button class="btn-services-style btn-services-size">SOLICITAR</button>
+              <!-- <button class="btn-services-style btn-services-size">SOLICITAR</button> -->
             </div>
+            <!-- <div 
+              class="uk-position-absolute"
+              style="background-color:red; width:280px; height:600px;"/>             -->
           </div>
         </div>
       </div>
@@ -77,17 +80,17 @@ export default {
         { 
           title: 'Desarrollo Web',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-          img:'data-128.png'
+          img:'/iconos/laptop.svg'
         },
         { 
           title: 'Creción de Apps',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-          img:'data-128.png'
+          img:'/iconos/ui.svg'
         },
         { 
-          title: 'Consultoria',
+          title: 'Asesoria Digital',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-          img:'data-128.png'
+          img:'/iconos/system.svg'
         }                        
       ],
       button: 'PROYECTOS',
@@ -98,6 +101,9 @@ export default {
 </script>
 
 <style>
+.svg-color{
+  fill: #fbdc00;
+}
 
 .btn-services-style{
   background-color:#fbdc00;
