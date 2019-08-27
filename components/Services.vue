@@ -171,6 +171,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 1em;
+    animation: pulsecServiceY 1.5s infinite;
   }
 
   .service-title-size{
@@ -188,6 +189,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 1em;
+    animation: pulsecServiceY 1.5s infinite;
   }
 
   .service-title-size{
@@ -205,6 +207,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2em;
     margin-top: 1em;
+    animation: pulsecServiceY 1.5s infinite;
   }
 
   .service-title-size{
@@ -222,6 +225,7 @@ export default {
     border-radius: 10px;
     padding: 1em 2.5em;
     margin-top: 1em;
+    animation: pulsecServiceY 1.5s infinite;
   }
 
   .service-title-size{
