@@ -8,10 +8,10 @@
       <div 
         class="uk-hidden@s"
         uk-slider="center:true">
-        <div class="uk-position-relative uk-visible-toggle uk-padding" tabindex="-1" style="width:15em;">
-          <ul class="uk-slider-items uk-child-width-1-1 uk-grid" style="width:15em;">
+        <div class="uk-position-relative uk-visible-toggle uk-padding-small" tabindex="-1" style="">
+          <ul class="uk-slider-items uk-child-width-1-1 uk-grid" style="width:100vw">
             <li
-              style="width:20em;"
+              style=""
               v-for="(service, i) in servicios"
               :key="i">
               <div 
@@ -20,7 +20,7 @@
                 <div 
                   class="uk-card-media-top uk-text-center uk-padding"
                   style="padding-bottom:0em;">
-                  <img :src="service.img" alt="">
+                  <img width="100px" height="100px" :src="service.img" alt="">
                 </div>
                 <div class="uk-card-body uk-text-center">
                   <h3 
@@ -36,7 +36,6 @@
           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>          
         </div>
-        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
       </div>
 
       <!-- Vista Desktop -->

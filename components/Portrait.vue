@@ -39,16 +39,16 @@ export default {
       portrait: [
         { 
           title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
+          img:'https://www.maximaonline.com.ar/multimedia/noticias/img_65610_programador.jpg'
+        },        
+        { 
+          title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
           img:'https://static.videezy.com/system/resources/thumbnails/000/005/654/original/4k-stock-video-of-typing-on-laptop.jpg'
         },
         { 
           title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
           img:'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200_amp/public/media/image/2018/01/284717-como-ser-programador-web-2018.jpg?itok=ntxM3Fxk'
-        },
-        { 
-          title: 'El <b>arte</b> desafia a la <b>tecnología</b> y la <b>tecnología</b> inspira al <b>arte</b>',
-          img:'https://www.maximaonline.com.ar/multimedia/noticias/img_65610_programador.jpg'
-        }                
+        }
       ],
       button: 'PROYECTOS',
       rip: ''
