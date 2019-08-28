@@ -1,9 +1,8 @@
 <template>
   <div 
     class="uk-flex uk-flex-column uk-flex-middle uk-padding-large"
-    style="background-color:black"
-    uk-height-viewport="offset-top: true">
-    
+    style="background-color:black">
+    <!-- uk-height-viewport="offset-top: true" -->
     <h2
       class="uk-width-1-1 uk-text-center" 
       style="font-weight:bold; color:#fbdc00; margin-bottom:0px;">Portafolio</h2>
@@ -68,7 +67,7 @@ export default {
           title: 'Proyecto 6',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
           imageUrl: 'https://laopinionla.files.wordpress.com/2019/02/shutterstock_349413722.jpg?quality=80&strip=all&w=940'
-        }                                        
+        }
       ]
     }
   }
@@ -100,8 +99,10 @@ export default {
   }  
 
   .portafolio{
-    width:100vw; 
-    height:25vh
+    /* width:100vw; */
+    /* height:25vh */
+    widows: 300px;
+    height:200px;
   }
 
   .text-description-portafolio{
@@ -134,8 +135,11 @@ export default {
   }
 
   .portafolio{
-    width:100vw; 
-    height:25vh
+    /* width:100vw; 
+    height:25vh */
+    /* width: 315px; */
+    width: 100vw;
+    height: 240px;
   }
 
   .text-description-portafolio{
@@ -151,8 +155,10 @@ export default {
   }
 
   .portafolio{
+    /* width: 400px; */
+    height: 265px;
     width:100vw; 
-    height:28vh
+    /* height:28vh */
   }
   .text-description-portafolio{
     font-size: 15px;
