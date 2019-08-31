@@ -22,7 +22,7 @@
           </select>
         </div>
         <div class="uk-margin-medium">
-          <textarea class="uk-textarea" rows="5" placeholder="Mensaje"></textarea>
+          <textarea class="uk-textarea text-area-portafolio" rows="5" placeholder="Mensaje"></textarea>
         </div>
         <div class="uk-width-1-1 uk-text-center">
           <button class="btn-contact-style btn-contact-size">Ver Proyecto</button>
@@ -44,11 +44,28 @@ export default {
 </script>
 
 <style>
+  .text-area-portafolio{
+    resize: none;
+  }
+
+  input:focus::placeholder {
+    color: #CCAA63 !important;
+    font-weight: bold !important;
+  }
+
+  textarea:focus::placeholder {
+    color: #CCAA63 !important;
+    font-weight: bold !important;
+  }  
+
   ::placeholder {
     color: #fbdc00 !important;
     font-weight: bold !important;
   }
 
+  input:active {
+    color:black;
+  }
   .contactTitleStyle{
     font-weight:bold; 
     color:#fbdc00; 

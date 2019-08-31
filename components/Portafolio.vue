@@ -22,8 +22,16 @@
             class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-width-1-1 portafolio">
             <img class="uk-position-absolute uk-width-1-1 uk-height-1-1" :src="item.imageUrl">
             <div
-              class="uk-position-absolute uk-padding description-portafolio image-portafolio uk-height-1-1 text-description-portafolio"
-              style="color:white; border:5px solid #fbdc00">{{ item.description }}</div>
+              class="uk-position-absolute uk-padding-small description-portafolio image-portafolio uk-height-1-1 text-description-portafolio"
+              style="color:white; text-align:center">
+              <div class="uk-height-1-1 uk-flex uk-flex-middle uk-padding uk-position-relative">
+                <div>{{ item.description }}</div>
+                <div class="uk-position-absolute lines-top"></div>
+                <div class="uk-position-absolute lines-bottom"></div>
+                <div class="uk-position-absolute lines-left"></div>
+                <div class="uk-position-absolute lines-right"></div>
+              </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -75,12 +83,18 @@ export default {
 </script>
 
 <style >
+
+
 .portafolio:hover > .image-portafolio{
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+  /* animation: borderimage 1s; */
+
 }
 
 .description-portafolio{
@@ -89,6 +103,78 @@ export default {
 
 .portafolio:hover > .description-portafolio{
   opacity: 1;
+}
+
+.portafolio:hover .lines-top{
+  animation: linehorizontal 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.portafolio:hover .lines-bottom{
+  animation: linehorizontal 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.portafolio:hover .lines-left{
+  animation: linevertical 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;  
+}
+
+.portafolio:hover .lines-right{
+  animation: linevertical 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+
+.lines-top {
+  top:0;
+  left: 0;
+  background-color:#fbdc00;
+  height: 1px;
+  /* height:0.5%; */
+}
+
+.lines-bottom {
+  bottom:0;
+  right:0;
+  background-color:#fbdc00;
+  height: 1px;
+  /* height:0.5%; */
+}
+
+.lines-left {
+  top:0;
+  left: 0;
+  background-color:#fbdc00;
+  width: 1px;
+  /* width:0.5%; */
+}
+
+.lines-right {
+  bottom:0em;
+  right:0;
+  background-color:#fbdc00;
+  width: 1px;
+  /* width:0.5%; */
+}
+
+@keyframes linehorizontal{
+  0% {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+@keyframes linevertical{
+  0% {
+    height:0%;
+  }
+  100% {
+    height:100%;
+  }
 }
 
 @media (max-width: 640px) {

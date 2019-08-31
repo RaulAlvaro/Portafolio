@@ -1,5 +1,6 @@
 <template>
-    <div 
+    <div
+      id="SERVICIOS"
       class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-padding-large"
       style="background-color:#eeeeee">
       <h2 style="font-weight:bold">Servicios</h2>

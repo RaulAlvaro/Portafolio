@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div id="HOME">
     <div uk-slideshow="animation: slide">
       <div class="uk-position-relative uk-visible-toggle"> 
         <ul 
