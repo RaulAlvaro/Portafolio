@@ -1,7 +1,7 @@
 <template>
   <div>
     <div 
-      class="uk-position-relative"
+      class="uk-position-relative uk-visible@m"
       style="z-index:1">
       <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky container-navbar; cls-inactive: uk-position-absolute uk-navbar-transparent uk-light; top: 800">
         <nav class="uk-navbar-container uk-width-1-1" uk-navbar>
@@ -31,7 +31,7 @@
               href="#offcanvas-nav-primary"/>
           </div>
         </nav>
-      </div>      
+      </div>
     </div>
   </div>
 
